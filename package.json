@@ -1,0 +1,22 @@
+{
+  "name": "sari",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samok13/sari.git"
+  },
+  "author": "samok13@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/samok13/sari/issues"
+  },
+  "homepage": "https://github.com/samok13/sari#readme",
+  "dependencies": {
+    "hapi": "^8.5.1"
+  }
+}
