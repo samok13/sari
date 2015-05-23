@@ -3,8 +3,7 @@ var Hapi = require('hapi');
 //Create a service with a host and port
 var server = new Hapi.Server();
 server.connection({
-	host: 'localhost',
-	port: 8000
+	port: process.env.PORT || 8000
 });
 
 //Add the route
@@ -17,4 +16,6 @@ server.route({
 });
 
 //Start the server
-server.start();
+server.start(function () {
+    console.log('Server running at:', server.info.uri);
+});
