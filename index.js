@@ -9,9 +9,9 @@ server.connection({
 //Add the route
 server.route({
 	method: 'GET',
-	path: '/hello',
+	path: '/hello/{user}',
 	handler: function (request, reply) {
-		reply('hello world');
+		reply('Hello ' + request.params.user);
 	}
 });
 
